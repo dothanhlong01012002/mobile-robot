@@ -9,7 +9,7 @@ dd =  DifferentialDrive(R,L); % dinh nghia xe
 %% cac tham so mo phong
 SampleTime = 0.1; % khoang cach giua 2 moc thoi gian
 tVec = 0:SampleTime:25; % vecto thoi gian
-initPose = [1;0;pi/4]; % vi tri ban dau (x0,y0& theta0)
+initPose = [1;1;pi/4]; % vi tri ban dau (x0,y0& theta0)
 pose = zeros(3,length(tVec)); % ma tran chua cac vi tri ung voi cac gia tri thoi gian cua tVec
 pose(:,1) = initPose; % gan vi tri ban dau vao ma tran pose
 
@@ -23,7 +23,7 @@ planner.NumNodes = 1000;
 planner.ConnectionDistance = 1;
 % ve duong di dua vao diem dau va diem cuoi
 startPoint = [initPose(1),initPose(2)];
-goalPoint  = [3, 1];
+goalPoint  = [9, 7];
 waypoints = findpath(planner,startPoint,goalPoint);
 show(planner)
 %% Pure Pursuit Controller
