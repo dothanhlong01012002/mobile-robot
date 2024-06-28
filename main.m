@@ -31,7 +31,7 @@ controller = controllerPurePursuit;
 controller.Waypoints = waypoints;
 controller.LookaheadDistance = 0.35;
 controller.DesiredLinearVelocity = 0.75;
-controller.MaxAngularVelocity = 1.5;
+controller.MaxAngularVelocity = 1;
 %% Create visualizer 
 load complexMap % load map chua inflate
 inflate=0;

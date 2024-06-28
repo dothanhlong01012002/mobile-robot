@@ -47,8 +47,8 @@ walls(82,35:42) = 1;       %vat can goc phai ben duoi
 walls(72,20) = 1;
 %% Phong 3
 walls(1:20,78) = 1;     %vach tuong 1
-walls(17,92:120) = 1;     %vach tuong 2
-walls(1:5,95:120) = 1;    %ban hoc 
+walls(17,92:110) = 1;     %vach tuong 2
+walls(1:5,95:110) = 1;    %ban hoc 
 walls(9:10,92:93) = 1;    %ghe ngoi
 walls(26,94) = 1;        %vat can ngay cua vao
 walls(7,66:74) = 1;     %vach tuong 3
@@ -62,20 +62,20 @@ walls(33:50,74) = 1;    %vach tuong 10
 walls(32,58) = 1;       %vat can goc phai ben duoi
 walls(22,80) = 1;       %vat can gan tuong 1
 %% Phong 4
-walls(51:70,94) = 1;
-walls(67,102:120) = 1; 
-walls(59:60,112:113) = 1;    %ghe ngoi
-walls(76,104) = 1;        %vat can ngay cua vao
-walls(57,86:94) = 1;     %vach tuong 3
-walls(63,70:86) = 1;    %vach tuong 4
-walls(70,86:94) = 1;    %vach tuong 5
-walls(78:95,109) = 1;    %vach tuong 6
-walls(88,100:109) = 1;    %vach tuong 7
-walls(88:92,80:84) = 1;    %vach tuong 8
-walls(83:90,100) = 1;    %vach tuong 9
-walls(80:100,94) = 1;    %vach tuong 10
-walls(82,78:85) = 1;       %vat can goc phai ben duoi
-walls(72,100) = 1;
+walls(51:70,84) = 1;
+walls(67,92:110) = 1; 
+walls(59:60,102:103) = 1;    %ghe ngoi
+walls(76,94) = 1;        %vat can ngay cua vao
+walls(57,76:84) = 1;     %vach tuong 3
+walls(63,60:76) = 1;    %vach tuong 4
+walls(70,76:84) = 1;    %vach tuong 5
+walls(78:85,99) = 1;    %vach tuong 6
+walls(88,90:99) = 1;    %vach tuong 7
+walls(88:92,70:74) = 1;    %vach tuong 8
+walls(83:90,90) = 1;    %vach tuong 9
+walls(80:100,84) = 1;    %vach tuong 10
+walls(82,68:75) = 1;       %vat can goc phai ben duoi
+walls(72,90) = 1;
 %DUA GIA TRI OCCUPANCY VAO MANG
 setOccupancy(compMap,[1 1],walls,"grid")
 show(compMap)
